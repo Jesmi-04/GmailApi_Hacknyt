@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+h1{
+    font-family: 'Splash';
+    font-size: 5vw;
+    text-align: center;
+    text-decoration-color: rgb(106, 0, 255);
+}
+
+body{
+    background-image: url('https://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container{
+    text-align: center;
+}
+
