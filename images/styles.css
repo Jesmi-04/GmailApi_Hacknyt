@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+h1{
+    font-family: 'Splash';
+    font-size: 5vw;
+    text-align: center;
+    text-decoration-color: chartreuse;
+}
+
+body{
+    background-image: url(./img.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container{
+    text-align: center;
+}
+
