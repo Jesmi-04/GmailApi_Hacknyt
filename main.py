@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_template():
-    return render_template("index.html", content = "THIS IS FROM PYTHON FILE")
+    return render_template("index.html", content = "")
 
 @app.route('/sendmail', methods=['POST', 'GET'])
 def send_mail():
@@ -16,8 +16,10 @@ def send_mail():
     from_email = request.form.get('from_mail')
     subject = request.form.get('subject')
     body = request.form.get('body')
-    
-    gmail.send_mail(to_email=to_email, from_email=from_email, subject=subject, body=body)
+
+    to_email_address = to_email.split('\n')
+    for i in to_email_address:
+        gmail.send_mail(to_email=i, from_email=from_email, subject=subject, body=body)
     return render_template('index.html', content = 'Email Sent')
 
 
