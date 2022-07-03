@@ -16,7 +16,11 @@ def send_mail():
     from_email = request.form.get('from_mail')
     subject = request.form.get('subject')
     body = request.form.get('body')
-    
+    print(to_email)
+    print(from_email)
+    print(subject)
+    print(body)
+
     gmail.send_mail(to_email=to_email, from_email=from_email, subject=subject, body=body)
     return render_template('index.html', content = 'Email Sent')
 
